@@ -16,8 +16,8 @@ export default function Home() {
         <link rel="stylesheet" href="https://use.typekit.net/yqa4abw.css" />
       </Head>
 
-      <HomePage__SquareOne></HomePage__SquareOne>
-      <HomePage__SquareTwo></HomePage__SquareTwo>
+      <SquareOne></SquareOne>
+      <SquareTwo></SquareTwo>
       <HomePage__HeroContainer>
         <HeroContainer__Title>BlippyJacob</HeroContainer__Title>
         <HeroContainer__SubTitle>Youtube Editor</HeroContainer__SubTitle>
@@ -88,7 +88,7 @@ const HeroContainer__CTA = styled.button`
 `;
 const CTA__Icon = styled.svg``;
 const CTA__Text = styled.p``;
-const HomePage__SquareOne = styled.div`
+const SquareOne = styled.div`
   position: absolute;
   top: -100px;
   left: 0;
@@ -101,7 +101,7 @@ const HomePage__SquareOne = styled.div`
   transform-origin: 0;
 `;
 
-const HomePage__SquareTwo = styled.div`
+const SquareTwo = styled.div`
   position: absolute;
   top: -40vh;
   left: 0;

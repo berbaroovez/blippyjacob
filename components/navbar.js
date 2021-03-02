@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <NavContainer>
       <p className="testimonies">
-        <Link href="/Contact">
+        <Link href="/about">
           <a>About</a>
         </Link>
       </p>
@@ -30,7 +30,7 @@ export default function Navbar() {
         </a>
       </Link>
       <p className="contact">
-        <Link href="/Contact">
+        <Link href="/contact">
           <a>Contact</a>
         </Link>
       </p>

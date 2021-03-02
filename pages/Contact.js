@@ -3,13 +3,8 @@ import styled from "styled-components";
 export default function Contact() {
   return (
     <ContactContainer>
-      <div className="line">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <SquareOne></SquareOne>
+      <SquareTwo></SquareTwo>
       <HeroContainer>
         <h1>Lets Work Together</h1>
       </HeroContainer>
@@ -124,49 +119,31 @@ const ContactContainer = styled.div`
   font-style: normal;
   font-size: 1.3rem;
   position: relative;
+`;
 
-  .line {
-    position: absolute;
-    top: -90px;
-    left: 0;
-    width: 100%;
-    height: 60vh;
+const SquareOne = styled.div`
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  background: #9053a5;
+  background: linear-gradient(124.32deg, #9053a5 24.47%, #441056 82.24%);
+  transform: rotate(-13.35deg);
+  transform: skewY(-8deg);
+  transform-origin: 0;
+`;
 
-    transform: skewY(-8deg);
-    transform-origin: 0;
-
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    background: #9053a5;
-    background: linear-gradient(124.32deg, #9053a5 30.1%, #441056 87.86%);
-
-    span:nth-child(1) {
-      grid-column: 1/3;
-      grid-row: 1;
-      background: linear-gradient(124.32deg, #441056 87.86%, #9053a5 30.1%);
-    }
-
-    span:nth-child(2) {
-      grid-column: 1/2;
-      grid-row: 5;
-      background: linear-gradient(124.32deg, #9053a5 30.1%, #642c77 87.86%);
-    }
-
-    span:nth-child(3) {
-      grid-column: 2/3;
-      grid-row: 3;
-      background: linear-gradient(124.32deg, #9053a5 30.1%, #652d78 87.86%);
-    }
-    span:nth-child(4) {
-      grid-column: 3/5;
-      grid-row: 5;
-      background: linear-gradient(124.32deg, #9053a5 30.1%, #441056 87.86%);
-    }
-    span:nth-child(5) {
-      grid-column: 4/6;
-      grid-row: 3;
-      background: linear-gradient(124.32deg, #652d78 30.1%, #441056 87.86%);
-    }
-  }
+const SquareTwo = styled.div`
+  position: absolute;
+  top: -40vh;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  background: #9053a5;
+  background: linear-gradient(124.32deg, #9053a5 30.1%, #441056 87.86%);
+  mix-blend-mode: multiply;
+  transform: rotate(16.74deg);
+  transform: skewY(8deg);
+  transform-origin: 0;
 `;
