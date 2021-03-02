@@ -1,14 +1,26 @@
 import styled from "styled-components";
-
+import Link from "next/link";
 export default function Footer() {
   return (
     <FooterContainer>
       <div className="Navigation">
         <p>Navigation</p>
         <ul>
-          <li>Home</li>
-          <li>Testimonies</li>
-          <li>Contact</li>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/Contact">
+              <a>Contact</a>
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="Contact">
@@ -62,7 +74,7 @@ export default function Footer() {
         <p>Built by</p>
         <p className="berb">
           <a href="https://twitter.com/berbaroovez">Berbaroovez</a> with ✨from
-          Chicago{" "}
+          Chicago
         </p>
       </div>
     </FooterContainer>

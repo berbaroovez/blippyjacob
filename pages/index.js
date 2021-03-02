@@ -1,17 +1,21 @@
 import styled from "styled-components";
 import Head from "next/head";
-import Navbar from "../components/navbar";
+import Link from "next/link";
 import YoutubeVid from "../components/YoutubeVid";
-import Footer from "../components/Footer";
-
+import { useRouter } from "next/router";
 export default function Home() {
+  const router = useRouter();
+  const handleClick = (e) => {
+    e.preventDefault();
+    router.push("/Contact");
+  };
   return (
     <>
       <Head>
         <title>BlippyJacob | Youtube Editor</title>
         <link rel="stylesheet" href="https://use.typekit.net/yqa4abw.css" />
       </Head>
-      <Navbar />
+
       <HomePage__SquareOne></HomePage__SquareOne>
       <HomePage__SquareTwo></HomePage__SquareTwo>
       <HomePage__HeroContainer>
@@ -24,7 +28,8 @@ export default function Home() {
           <span className="base"></span>
           <span className="stand"></span>
         </Monitor>
-        <HeroContainer__CTA>
+
+        <HeroContainer__CTA onClick={handleClick}>
           <CTA__Text>Lets Work</CTA__Text>
         </HeroContainer__CTA>
       </HomePage__HeroContainer>
@@ -39,7 +44,6 @@ export default function Home() {
           <YoutubeVid />
         </VideoContainer__Work>
       </HomePage_VideoContainer>
-      <Footer />
     </>
   );
 }
