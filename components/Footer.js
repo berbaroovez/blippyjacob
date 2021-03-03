@@ -84,7 +84,7 @@ export default function Footer() {
 const FooterContainer = styled.div`
   width: 100%;
   height: 200px;
-  background: #150c21;
+  background: #27163e;
   border-radius: 20px 20px 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

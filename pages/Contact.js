@@ -107,7 +107,7 @@ const HeroContainer = styled.div`
   grid-template-rows: repeat(6, 1fr);
   height: 50vh;
   color: white;
-
+  margin-bottom: 100px;
   h1:nth-child(1) {
     grid-row: 2;
     grid-column: 2/3;
