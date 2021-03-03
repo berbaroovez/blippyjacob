@@ -71,28 +71,7 @@ const HomePage_VideoContainer = styled.div`
   margin: auto;
   max-width: 1000px;
 `;
-const HeroContainer__CTA = styled.div`
-  text-align: center;
-  position: relative;
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  background: #431f5d;
-  grid-row: 4;
-  grid-column: 2;
 
-  display: grid;
-
-  align-content: center;
-  color: white;
-  font-family: azo-sans-web, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 1.3rem;
-`;
-
-const CTA__Text = styled.p``;
 const SquareOne = styled.div`
   position: absolute;
   top: -100px;
