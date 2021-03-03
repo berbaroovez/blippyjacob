@@ -2,15 +2,15 @@ import styled from "styled-components";
 import Head from "next/head";
 import { VideoList } from "../files/VideoList";
 import YoutubeVid from "../components/YoutubeVid";
-
+import { NextSeo } from "next-seo";
 import FancyButton from "../components/FancyButton";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>BlippyJacob | Youtube Editor</title>
-        <link rel="stylesheet" href="https://use.typekit.net/yqa4abw.css" />
-      </Head>
+      <NextSeo
+        title="Blippy Jacob | Youtube Editor"
+        description="Blippy Jacob is youtube editor for Atrioc and Pointcrow"
+      />
 
       <SquareOne></SquareOne>
       <SquareTwo></SquareTwo>

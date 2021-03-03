@@ -1,8 +1,16 @@
 import styled from "styled-components";
-
+import { NextSeo } from "next-seo";
 export default function Contact() {
   return (
     <AboutContainer>
+      <NextSeo
+        title={"Blippy Jacob | Contact"}
+        canonical={"https://blippyjacob.com/contact"}
+        openGraph={{
+          url: "https://blippyjacob.com/contact",
+          title: "Blippy Jacob | Contact",
+        }}
+      />
       <SquareOne></SquareOne>
       <SquareTwo></SquareTwo>
       <HeroContainer>

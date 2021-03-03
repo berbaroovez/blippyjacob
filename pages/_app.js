@@ -1,6 +1,7 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import Layout from "../components/Layout";
-
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
@@ -18,6 +19,7 @@ const theme = {
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <DefaultSeo {...SEO} />
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <Layout>
