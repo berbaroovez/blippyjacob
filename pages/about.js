@@ -78,8 +78,8 @@ const HeroContainer = styled.div`
 
     @media (max-width: 430px) {
       top: 100px;
-      left: 50%;
-      margin-left: -100px;
+      left: 75px;
+
       grid-row: 2;
       grid-column: 1;
       width: 150px;
@@ -87,10 +87,8 @@ const HeroContainer = styled.div`
 
     @media (max-width: 800px) and (min-width: 430px) {
       top: 100px;
-      left: 50%;
+      left: -200px;
       margin-left: -100px;
-      grid-row: 2;
-      grid-column: 1;
       width: 200px;
     }
   }
