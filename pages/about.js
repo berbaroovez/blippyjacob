@@ -36,21 +36,40 @@ const AboutContainer__Info = styled.div`
 const HeroContainer = styled.div`
   position: relative;
   display: grid;
+  width: 100%;
+  justify-content: center;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   height: 50vh;
   color: white;
+  @media (max-width: 800px) {
+    grid-template-rows: 0.5fr;
+    grid-template-columns: auto;
+  }
 
   h1:nth-child(1) {
-    grid-row: 2;
-    grid-column: 2/3;
+    @media (max-width: 800px) {
+      grid-row: 2;
+    }
+    grid-row: 3;
+    grid-column: 2/4;
   }
 
   img {
     position: absolute;
+
     border-radius: 50%;
     grid-row: 2;
     grid-column: 4/6;
+    width: 300px;
+
+    @media (max-width: 800px) {
+      top: 100px;
+      left: 50%;
+      margin-left: -100px;
+      grid-row: 2;
+      width: 200px;
+    }
   }
   margin-bottom: 100px;
 `;
@@ -62,9 +81,11 @@ const AboutContainer = styled.div`
   position: relative;
 
   .about {
+    padding: 2rem;
     font-weight: 300;
     max-width: 1000px;
     margin: auto;
+    color: black;
   }
 `;
 
