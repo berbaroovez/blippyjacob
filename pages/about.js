@@ -68,6 +68,7 @@ const HeroContainer = styled.div`
       left: 50%;
       margin-left: -100px;
       grid-row: 2;
+      grid-column: 1;
       width: 200px;
     }
   }
