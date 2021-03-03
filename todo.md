@@ -2,3 +2,4 @@
 [] make CTA go to contact page
 [x] fix nav in footer
 [] make BJ go home
+[] move font import to top file

@@ -1,14 +1,10 @@
 import styled from "styled-components";
 import Head from "next/head";
-import Link from "next/link";
+import { VideoList } from "../files/VideoList";
 import YoutubeVid from "../components/YoutubeVid";
-import { useRouter } from "next/router";
+
+import FancyButton from "../components/FancyButton";
 export default function Home() {
-  const router = useRouter();
-  const handleClick = (e) => {
-    e.preventDefault();
-    router.push("/contact");
-  };
   return (
     <>
       <Head>
@@ -29,27 +25,35 @@ export default function Home() {
           <span className="stand"></span>
         </Monitor>
 
-        <HeroContainer__CTA onClick={handleClick}>
+        {/* <HeroContainer__CTA onClick={handleClick}>
           <CTA__Text>Lets Work</CTA__Text>
-        </HeroContainer__CTA>
+        </HeroContainer__CTA> */}
+        <FancyButton />
       </HomePage__HeroContainer>
 
       <HomePage_VideoContainer>
         <VideoContainer__Title>Portfolio</VideoContainer__Title>
 
         <VideoContainer__Work>
-          <YoutubeVid />
-          <YoutubeVid />
-          <YoutubeVid />
-          <YoutubeVid />
+          {VideoList
+            ? VideoList.map((video) => (
+                <YoutubeVid
+                  title={video.title}
+                  src={video.src}
+                  key={video.title}
+                />
+              ))
+            : "Loading"}
         </VideoContainer__Work>
       </HomePage_VideoContainer>
     </>
   );
 }
 const VideoContainer__Work = styled.div`
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
+  align-items: end;
   flex-wrap: wrap;
   @media (max-width: 600px) {
     justify-content: center;
@@ -186,7 +190,7 @@ const Monitor = styled.div`
     left: 5px;
     right: 5px;
     height: 300px;
-    background: url("https://media1.tenor.com/images/5c7654a69e7ed9ecae1c7a7b177d6056/tenor.gif?itemid=16851585");
+    background: url("./atriocjam.gif");
     background-size: cover;
     border-radius: 3px;
   }

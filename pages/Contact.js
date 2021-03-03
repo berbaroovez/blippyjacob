@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Head from "next/head";
 export default function Contact() {
   return (
     <ContactContainer>
