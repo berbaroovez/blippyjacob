@@ -12,7 +12,7 @@ const SEO = {
     description,
     images: [
       {
-        url: "https://fastfeedback.io/og.png",
+        url: "https://blippyjacob.vercel.app/banner.png",
         alt: title,
         width: 1080,
         height: 723,
