@@ -56,7 +56,12 @@ const HeroContainer = styled.div`
   }
 
   h1:nth-child(1) {
-    @media (max-width: 800px) {
+    @media (max-width: 430px) {
+      grid-row: 2;
+
+      font-size: 2rem;
+    }
+    @media (max-width: 800px) and (min-width: 430px) {
       grid-row: 2;
     }
     grid-row: 3;
@@ -71,7 +76,16 @@ const HeroContainer = styled.div`
     grid-column: 4/6;
     width: 300px;
 
-    @media (max-width: 800px) {
+    @media (max-width: 430px) {
+      top: 100px;
+      left: 50%;
+      margin-left: -100px;
+      grid-row: 2;
+      grid-column: 1;
+      width: 150px;
+    }
+
+    @media (max-width: 800px) and (min-width: 430px) {
       top: 100px;
       left: 50%;
       margin-left: -100px;
