@@ -1,20 +1,16 @@
 import styled from "styled-components";
 import Head from "next/head";
-import Link from "next/link";
+import { VideoList } from "../files/VideoList";
 import YoutubeVid from "../components/YoutubeVid";
-import { useRouter } from "next/router";
+import { NextSeo } from "next-seo";
+import FancyButton from "../components/FancyButton";
 export default function Home() {
-  const router = useRouter();
-  const handleClick = (e) => {
-    e.preventDefault();
-    router.push("/contact");
-  };
   return (
     <>
-      <Head>
-        <title>BlippyJacob | Youtube Editor</title>
-        <link rel="stylesheet" href="https://use.typekit.net/yqa4abw.css" />
-      </Head>
+      <NextSeo
+        title="Blippy Jacob | Youtube Editor"
+        description="Blippy Jacob is youtube editor for Atrioc and Pointcrow"
+      />
 
       <SquareOne></SquareOne>
       <SquareTwo></SquareTwo>
@@ -29,27 +25,35 @@ export default function Home() {
           <span className="stand"></span>
         </Monitor>
 
-        <HeroContainer__CTA onClick={handleClick}>
+        {/* <HeroContainer__CTA onClick={handleClick}>
           <CTA__Text>Lets Work</CTA__Text>
-        </HeroContainer__CTA>
+        </HeroContainer__CTA> */}
+        <FancyButton />
       </HomePage__HeroContainer>
 
       <HomePage_VideoContainer>
         <VideoContainer__Title>Portfolio</VideoContainer__Title>
 
         <VideoContainer__Work>
-          <YoutubeVid />
-          <YoutubeVid />
-          <YoutubeVid />
-          <YoutubeVid />
+          {VideoList
+            ? VideoList.map((video) => (
+                <YoutubeVid
+                  title={video.title}
+                  src={video.src}
+                  key={video.title}
+                />
+              ))
+            : "Loading"}
         </VideoContainer__Work>
       </HomePage_VideoContainer>
     </>
   );
 }
 const VideoContainer__Work = styled.div`
+  margin-bottom: 100px;
   display: flex;
   justify-content: space-around;
+  align-items: end;
   flex-wrap: wrap;
   @media (max-width: 600px) {
     justify-content: center;
@@ -67,28 +71,7 @@ const HomePage_VideoContainer = styled.div`
   margin: auto;
   max-width: 1000px;
 `;
-const HeroContainer__CTA = styled.div`
-  text-align: center;
-  position: relative;
-  width: 200px;
-  height: 50px;
-  border-radius: 5px;
-  border: none;
-  background: #431f5d;
-  grid-row: 4;
-  grid-column: 2;
 
-  display: grid;
-
-  align-content: center;
-  color: white;
-  font-family: azo-sans-web, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 1.3rem;
-`;
-
-const CTA__Text = styled.p``;
 const SquareOne = styled.div`
   position: absolute;
   top: -100px;
@@ -186,7 +169,7 @@ const Monitor = styled.div`
     left: 5px;
     right: 5px;
     height: 300px;
-    background: url("https://media1.tenor.com/images/5c7654a69e7ed9ecae1c7a7b177d6056/tenor.gif?itemid=16851585");
+    background: url("./atriocjam.gif");
     background-size: cover;
     border-radius: 3px;
   }

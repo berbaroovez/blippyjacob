@@ -1,6 +1,5 @@
-import styled from "styled-components";
 import Footer from "./Footer";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
   return (

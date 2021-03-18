@@ -1,8 +1,21 @@
+<<<<<<< HEAD:pages/Contact.js
 import styled, { keyframes } from "styled-components";
 
+=======
+import styled from "styled-components";
+import { NextSeo } from "next-seo";
+>>>>>>> cb464a2bfe5eb45872ab41beebdfebaefd34452a:pages/contact.js
 export default function Contact() {
   return (
     <ContactContainer>
+      <NextSeo
+        title={"Blippy Jacob | Contact"}
+        canonical={"https://blippyjacob.com/contact"}
+        openGraph={{
+          url: "https://blippyjacob.com/contact",
+          title: "Blippy Jacob | Contact",
+        }}
+      />
       <SquareOne></SquareOne>
       <SquareTwo></SquareTwo>
       <HeroContainer>
@@ -109,7 +122,7 @@ const HeroContainer = styled.div`
   grid-template-rows: repeat(6, 1fr);
   height: 50vh;
   color: white;
-
+  margin-bottom: 100px;
   h1:nth-child(1) {
     grid-row: 2;
     grid-column: 2/3;
