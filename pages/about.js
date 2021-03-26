@@ -34,8 +34,8 @@ export default function Contact() {
   );
 }
 const AboutContainer__Info = styled.div`
-  color: #9053a5;
   h1 {
+    color: #9053a5;
     text-align: center;
   }
 
@@ -106,7 +106,6 @@ const AboutContainer = styled.div`
     font-weight: 300;
     max-width: 1000px;
     margin: auto;
-    color: black;
   }
 `;
 
