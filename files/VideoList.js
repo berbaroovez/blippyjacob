@@ -1,5 +1,13 @@
 export const VideoList = [
   {
+    src: " https://www.youtube.com/embed/-1sZXGLzCq8",
+    title: "My Chat made PowerPoints...",
+  },
+  {
+    src: "https://www.youtube.com/embed/iJGPcGJposU",
+    title: "I stumbled across a website purely made to cyberbully me",
+  },
+  {
     src: "https://www.youtube.com/embed/0nemqT3qlOY",
     title: "He has the Ring Fit WORLD RECORD.... I challenged him.",
   },
