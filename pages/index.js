@@ -70,6 +70,14 @@ const VideoContainer__Title = styled.h2`
 const HomePage_VideoContainer = styled.div`
   margin: auto;
   max-width: 1000px;
+  padding-top: 200px;
+
+  @media (min-width: 600px) {
+    padding: 100px;
+  }
+  @media (min-width: 800px) {
+    padding: unset;
+  }
 `;
 
 const SquareOne = styled.div`
@@ -136,6 +144,7 @@ const Monitor = styled.div`
   position: absolute;
   width: 600px;
   height: 320px;
+  top: 50px;
   left: 50%;
   margin-left: -300px;
   transform: scale(0.7);
