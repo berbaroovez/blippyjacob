@@ -1,10 +1,7 @@
-<<<<<<< HEAD:pages/Contact.js
 import styled, { keyframes } from "styled-components";
 
-=======
 import styled from "styled-components";
 import { NextSeo } from "next-seo";
->>>>>>> cb464a2bfe5eb45872ab41beebdfebaefd34452a:pages/contact.js
 export default function Contact() {
   return (
     <ContactContainer>
