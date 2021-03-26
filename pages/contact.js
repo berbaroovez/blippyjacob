@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-import styled from "styled-components";
 import { NextSeo } from "next-seo";
 export default function Contact() {
   return (
