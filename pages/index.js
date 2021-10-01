@@ -178,7 +178,7 @@ const Monitor = styled.div`
     left: 5px;
     right: 5px;
     height: 300px;
-    background: url("./atriocjam.gif");
+    background: url("./premiere.gif");
     background-size: cover;
     border-radius: 3px;
   }
