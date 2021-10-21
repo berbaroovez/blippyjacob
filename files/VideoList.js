@@ -1,5 +1,54 @@
 export const VideoList = [
   {
+    src: " https://www.youtube.com/embed/sBXVyrPc9zY",
+    title: "Who is the best player for each Valorant agent?",
+  },
+  {
+    src: " https://www.youtube.com/embed/M8_Y2qcWVhA",
+    title: "Valorant NA Last Chance Qualifier Preview",
+  },
+  {
+    src: " https://www.youtube.com/embed/PKkTQQgSGoQ",
+    title: "HERE COMES THE BABY",
+  },
+  {
+    src: " https://www.youtube.com/embed/3S-oSTBJ6iY",
+    title: "The insane mind of BDG.",
+  },
+  {
+    src: " https://www.youtube.com/embed/sk9ZJqf_dZ8",
+    title: "mfw the bloopers are funny",
+  },
+  {
+    src: " https://www.youtube.com/embed/C-w5Tng-zlc",
+    title: "Brands Getting Roasted",
+  },
+  {
+    src: " https://www.youtube.com/embed/SgDYcZ28YuE",
+    title: "I Crashed a Movie Set...",
+  },
+  {
+    src: " https://www.youtube.com/embed/9EAsQ6_mDK0",
+    title: "MOMENTS I REGRET STREAMING",
+  },
+  {
+    src: " https://www.youtube.com/embed/HB6LjQ-TTtY",
+    title: "THE TWEETS THAT RUINED APRIL",
+  },
+  {
+    src: " https://www.youtube.com/embed/OdVbzegI0nA",
+    title: "The 'YouTube Video Essay' That Broke Me.",
+  },
+  {
+    src: " https://www.youtube.com/embed/fytgZ9FDSqg",
+    title: "Cut the red wire.",
+  },
+  {
+    src: " https://www.youtube.com/embed/8_LYPktVQWs",
+    title: "What's the best Kids Show theme song?",
+  },
+  //divider
+  {
     src: " https://www.youtube.com/embed/-1sZXGLzCq8",
     title: "My Chat made PowerPoints...",
   },
