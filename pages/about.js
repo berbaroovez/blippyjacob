@@ -21,13 +21,13 @@ export default function Contact() {
         <h1>About Me</h1>
         <div className="about">
           Hi! I'm blippyjacob, but you can also call me just Blippy or Jacob! I
-          am 18 years old and have been editing for about three years and about
-          eight months of client work. I use Premiere Pro to edit, but I am
-          fluent in the entire Adobe Creative Cloud, so if you need something
-          done in Photoshop and After Effects, I can also do that! I would say
-          that I am best at Livestream highlights because that's what I've done
-          the most; however, I have also edited some prerecorded content before,
-          so it's not out of my skill level.
+          am 18 years old and have been editing for about four years and about
+          two years of client work. I use Premiere Pro to edit, but I am fluent
+          in the entire Adobe Creative Cloud, so if you need something done in
+          Photoshop and After Effects, I can also do that! I would say that I am
+          best at Livestream highlights because that's what I've done the most;
+          however, I have also edited some prerecorded content before, so it's
+          not out of my skill level.
         </div>
       </AboutContainer__Info>
     </AboutContainer>
