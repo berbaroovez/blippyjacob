@@ -1,8 +1,13 @@
 export const VideoList = [
   {
-    src: " https://www.youtube.com/embed/sBXVyrPc9zY",
-    title: "Who is the best player for each Valorant agent?",
+    src: " https://www.youtube.com/embed/KCodctmF3S8",
+    title: "The NEW best Falco in the WORLD?! (New York)",
   },
+  {
+    src: " https://www.youtube.com/embed/nHJu6TLy4nM",
+    title: "Hungrybox returns to glory at GOML 2022",
+  },
+
   {
     src: " https://www.youtube.com/embed/M8_Y2qcWVhA",
     title: "Valorant NA Last Chance Qualifier Preview",
